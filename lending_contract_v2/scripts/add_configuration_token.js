@@ -46,7 +46,7 @@ const addConfigurationToken = async (
 };
 
 const main = async () => {
-  await addConfigurationToken("USDC", true, USDC_PRICE_FEED_ID, LEND_COIN_TYPE);
+  // await addConfigurationToken("USDC", true, USDC_PRICE_FEED_ID, LEND_COIN_TYPE);
   await addConfigurationToken(
     "SUI",
     false,

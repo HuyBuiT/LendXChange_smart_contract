@@ -49,7 +49,9 @@ const updateSystem = async () => {
       tx.pure.u64(MAX_PRICE_AGE_SECONDS),
     ],
   });
-
+  tx.setSender(HOT_WALLET_ADDRESS);
+  tx.setGasBudget(10_000_000);
+  tx.setGasOwner(HOT_WALLET_ADDRESS);
   const res = await suiClient.signAndExecuteTransactionBlock({
     transactionBlock: tx,
     signer,

@@ -27,6 +27,7 @@ export const USDC_TOKEN_TREASURY_CAP =
 export const MINT_USDC_PRIVATE_KEY = process.env.MINT_USDC_PRIVATE_KEY || "_";
 
 export const HOT_WALLET_ADDRESS = process.env.HOT_WALLET_ADDRESS || "_";
+export const HOT_WALLET_PRIVATE_KEY = process.env.HOT_WALLET_PRIVATE_KEY || "_";
 export const MIN_HEALTH_RATIO = process.env.MIN_HEALTH_RATIO || 12000; // 120%
 export const MAX_PRICE_AGE_SECONDS = process.env.MAX_PRICE_AGE_SECONDS || 90; // 90 seconds
 
