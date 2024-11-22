@@ -1,0 +1,11 @@
+[package]
+name = "lend_x_change"
+edition = "2024.beta"
+
+[dependencies]
+Pyth = { git = "https://github.com/pyth-network/pyth-crosschain.git", subdir = "target_chains/sui/contracts", rev = "sui-contract-testnet" }
+
+[addresses]
+lend_x_change = "0x0"
+admin = "0xfef178223761ae8c347f9fdf6e283f0e04ffa428c7d3c1399f5e225b19094e20"
+operator = "0xfef178223761ae8c347f9fdf6e283f0e04ffa428c7d3c1399f5e225b19094e20"
