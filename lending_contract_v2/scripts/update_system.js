@@ -36,7 +36,6 @@ const updateSystem = async () => {
   const tx = new TransactionBlock();
   tx.moveCall({
     target: `${UPGRADED_PACKAGE}::operator::update_configuration`,
-    typeArguments: [LEND_COIN_TYPE],
     arguments: [
       tx.object(OPERATOR_CAP),
       tx.object(VERSION),
