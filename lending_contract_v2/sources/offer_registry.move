@@ -65,7 +65,25 @@ module lend_x_change::offer_registry {
         interest: u64,
         lender: address,
     }
-
+    public fun get_status<T>(offer: &Offer<T>): String {
+        offer.status
+    }
+    public fun get_amount<T>(offer: &Offer<T>): u64 {
+        offer.amount
+    }
+    public fun get_duration<T>(offer: &Offer<T>): u64 {
+        offer.duration
+    }
+    public fun get_interest<T>(offer: &Offer<T>): u64 {
+        offer.interest
+    }
+    public fun get_lender<T>(offer: &Offer<T>): address {
+        offer.lender
+    }
+    public fun get_asset_tier<T>(offer: &Offer<T>): ID {
+        offer.asset_tier
+    }
+    
     
     public(package) fun new_offer<T>(
         asset_tier: ID,

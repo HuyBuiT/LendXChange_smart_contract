@@ -20,6 +20,22 @@ module lend_x_change::asset_tier {
         duration: u64,
     }
 
+    public fun get_amount<T>(
+        asset_tier: &AssetTier<T>
+    ): u64 {
+        asset_tier.amount
+    }
+    public fun get_duration<T>(
+        asset_tier: &AssetTier<T>
+    ): u64 {
+        asset_tier.duration
+    }
+    public fun get_id<T>(
+        asset_tier: &AssetTier<T>
+    ): ID {
+        object::id(asset_tier)
+    }
+
     public(package) fun new<T>(
         name: String,
         amount: u64,
